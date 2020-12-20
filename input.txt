@@ -1,4 +1,4 @@
-3
-зонт - umbrella, canopy, bumbershoot
-кубик - cube, block, tessera
-стол - table, board, desk, platen, cuisine, diet
+Hello world!
+Привет мир!
+One, two, three
+Один, два, три

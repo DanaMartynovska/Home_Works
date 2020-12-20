@@ -17,13 +17,16 @@ while True:
         res(staff)
         ask = int(input("введите 0 для создания нового словаря или 1 для измений значений в сущестующих"))
     else:
-        ask_2 = staff[int(input('Виберите номер словаря'))]
-        ask_2 = {'num':int(input('Введите номер')), 'price': int(input('Введите сумму'))}
+        index = int(input('Виберите номер словаря'))
+        beta_staff = staff[index]
+        beta_staff['num'] = int(input('Введите номер товара'))
+        beta_staff['price'] = int(input('Введите цену товара'))
+        print(beta_staff)
         conf = int(input('Введите 0 для потверждения изменений, либо другую цифру для отмены'))
-        res(staff)
         if conf == 0:
+            staff[index] = beta_staff
+            res(staff)
             break
-
 
 
 
